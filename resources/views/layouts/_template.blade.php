@@ -103,8 +103,6 @@
             </div>
         </footer>
 
-{{--        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>--}}
-
         <script src="{{ asset('bootstrap/jquery.js') }}"></script>
         <script src="{{ asset('bootstrap/js/bootstrap.bundle.js') }}"></script>
         <script src="{{ asset('carloc/owl.carousel/owl.carousel.min.js') }}"></script>

@@ -33,7 +33,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $voiture->modele->marque->name.' '.$voiture->modele->name }}</h5>
                                 <p class="card-text">
-                                    La voiture ci presente est d'une puissance de {{ $voiture->puissance }}.Elle est dotee de {{ $voiture->places }} places. Et est louée a <br><b class="p-1 bg-success">{{ $voiture->daily_price }} FCFA</b> son prix journalier
+                                    La voiture ci presente est d'une puissance de {{ $voiture->puissance }}.Elle est dotee de {{ $voiture->places }} places. Et est louée a <br>    <b class="p-1 bg-success">{{ $voiture->daily_price }} FCFA</b> son prix journalier
                                 </p>
                                 <a href="{{ route('rentFirstProcess', ['voiture'=>$voiture->id]) }}" class="btn btn-info">Proceder a la location</a>
                             </div>

@@ -21,7 +21,7 @@
 @section('main')
     <div class="container">
 
-        <div class="col-12 pt-4">
+        <div class="col-12 pt-4" id="marque">
             <h4 style="color: var(--CarLOC)" class="text-center">Les marques dont nous disposons</h4>
         </div>
 

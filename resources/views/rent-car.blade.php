@@ -44,19 +44,19 @@
                 <div class="row col-12">
                     <div class="col-12">
                         <p class="text-center">
-                            La voiture a loue est une perle parmis tant d'autres. Elle dispose d'un moteur d'une puissant de <b>{{ $car->puissance }}</b>. <br>
-                            Elle dispose de {{ $car->places }} et est de {{ $car->daily_price }} par jour
+                            La voiture à louer est une perle parmi tant d'autres. Elle dispose d'un moteur d'une puissant de <b>{{ $car->puissance }}</b>. <br>
+                            Elle dispose également de {{ $car->places }} et vaut {{ $car->daily_price }} par jour
                         </p>
                     </div>
                     <div class="col-12 text-center">
                         <form class="" action="{{ route('rentSecondProcess',['voiture' => $car->id]) }}">
                             @csrf
                             <div class="form-group">
-                                <label for="date_start">Date a le prendre</label>
+                                <label for="date_start">Date à le prendre</label>
                                 <input type="date" id="date_end" class="form-control" name="date_start" >
                             </div>
                             <div class="form-group">
-                                <label for="date_end">Date a rendre</label>
+                                <label for="date_end">Date à rendre</label>
                                 <input type="date" id="date_end" class="form-control" name="date_end">
                             </div>
                             <button type="submit" class="btn btn-info"> Louer {{ $car->modele->marque->name.' '.$car->modele->name }} </button>
